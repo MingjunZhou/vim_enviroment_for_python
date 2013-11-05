@@ -86,6 +86,13 @@ nmap <silent><Leader>tn <Esc>:Pytest next<CR>
 nmap <silent><Leader>tp <Esc>:Pytest previous<CR>
 nmap <silent><Leader>te <Esc>:Pytest error<CR>
 
+" Snippets variables
+let g:snips_author='Mingjun Zhou'
+let g:author='Mingjun Zhou'
+let g:snips_email='mingjun.zhou@gmail.com'
+let g:email='mingjun.zhou@gmail.com'
+let g:snips_github='https://github.com/mingjun.zhou'
+let g:github='https://github.com/mingjun.zhou'
 " Run django tests
 map <leader>dt :set makeprg=python\ manage.py\ test\|:call MakeGreen()<CR>
 
@@ -239,7 +246,8 @@ if has("gui_running")
     set guioptions-=T
 endif
 
-colorscheme molokai
+"colorscheme molokai
+colorscheme vividchalk
 
 " Paste from clipboard
 map <leader>p "+p
