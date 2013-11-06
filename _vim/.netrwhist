@@ -1,6 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/michael/work/demo/mjlearn/html'
 let g:netrw_dirhist_2='/home/michael/work/demo/mjnlp/python-wrapper'
 let g:netrw_dirhist_3='/home/michael/work/env/dotfiles'
 let g:netrw_dirhist_4='/home/alpha/work/env/dotfiles/_vim/bundle/snipmate/plugin'
+let g:netrw_dirhist_5='/home/alpha/work/demo/PyBRML/brml/utils'
+let g:netrw_dirhist_6='/home/alpha/work/demo/PyBRML/brml/potential'
+let g:netrw_dirhist_7='/home/alpha/work/demo/scikit-learn/sklearn/cluster'

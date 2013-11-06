@@ -5,35 +5,35 @@ snippet main
 	if __name__ == "__main__":
 
 snippet mdoc
-	"""Fetches rows from a Bigtable.
-	Retrieves rows pertaining to the given keys from the Table instance
-	represented by big_table.  Silly things may happen if
-	other_silly_variable is not None.
+	"""Maximise a potential over variables.
+
+	Usage :
+		newpot, maxstate = maxpot(pot, invariables)
 
 	Parameters :
-		param_1 : An 3 * 4 ndarray.
-			Information about param_1.
+		pot : Potential class :
+			The target potential to be maximised. After the maximisation, the
+			origin pot is not changed, instead we get a newpot.
 
-		param_2 : An 3 * 4 ndarray.
-			Information about param_2.
+		varargin : sequence[n_variables, ] or nd.ndarray[n_variables, ] :
+			Several variales to maximise the potential over.
 
-		param_3 : An 3 * 4 ndarray.
-			Information about param_3.
+		maxover : int, optional, default: 1 :
+			If maxover == 1 the potential is maxed over variables, otherwise
+			potential is maxed over everything except variables.
 
 	Returns :
-		return_value_1 : A 3 * 4 ndarray.
-			Information about return_value_1.
+		newpot : Potential class :
+			A new pot that maximised the origin potential.
 
-		return_value_2 : A 3 * 4 ndarray.
-			Information about return_value_2.
-
-		return_value_3 : A 3 * 4 ndarray.
-			Information about return_value_3.
-
+		maxstate : nd.array[n_variables, ] :
+			When the variables in varargin equal to the states in maxstate,
+			we get the maximised potential.
 
 	Raises :
-		IOError : An error occurred accessing the bigtable.Table object.
-	"""
+		None
+
+	 """
 
 snippet cdoc
 	"""Summary of class here.

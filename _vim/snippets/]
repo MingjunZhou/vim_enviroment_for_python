@@ -1,0 +1,54 @@
+snippet pdb
+	import pdb; pdb.set_trace()
+
+snippet main
+	if __name__ == "__main__":
+
+snippet mdoc
+    """Maximise a potential over variables.
+
+    Usage :
+        newpot, maxstate = maxpot(pot, invariables)
+
+    Parameters :
+        pot : Potential class :
+            The target potential to be maximised. After the maximisation, the
+            origin pot is not changed, instead we get a newpot.
+
+        varargin : sequence[n_variables, ] or nd.ndarray[n_variables, ] :
+            Several variales to maximise the potential over.
+
+        maxover : int, optional, default: 1 :
+            If maxover == 1 the potential is maxed over variables, otherwise
+            potential is maxed over everything except variables.
+
+    Returns :
+        newpot : Potential class :
+            A new pot that maximised the origin potential.
+
+        maxstate : nd.array[n_variables, ] :
+            When the variables in varargin equal to the states in maxstate,
+            we get the maximised potential.
+
+    Raises :
+        None
+
+    """
+
+snippet cdoc
+	"""Summary of class here.
+		Longer class information....
+		Longer class information....
+
+		Attributes :
+			likes_spam : A boolean indicating if we like SPAM or not.
+			eggs : An integer count of the eggs we have laid.
+	"""
+
+snippet fdoc
+	#File : ${1: `vim_snippets#Filename('$1.py', 'foo.py')`}
+	#Author : `g:snips_author` <`g:snips_email`>
+	#Version :
+	#Date : `system("date +%Y-%m-%d")`
+	#License : BSD 3 clause
+	#Description :
