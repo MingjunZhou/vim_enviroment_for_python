@@ -319,7 +319,7 @@ endif
 
 " change vim completion preview window height 
 " source: http://stackoverflow.com/questions/3712725/can-i-change-vim-completion-preview-window-height
-set previewheight=50
+set previewheight=25
 au BufEnter ?* call PreviewHeightWorkAround()
 func PreviewHeightWorkAround()
    if &previewwindow
