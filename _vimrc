@@ -176,6 +176,7 @@ nnoremap <leader>. :lcd %:p:h<CR>
 """ Insert completion
 " don't select first item, follow typing in autocomplete
 set completeopt=menuone,longest,preview
+"set pumheight=24             " Keep a small completion window
 set pumheight=6             " Keep a small completion window
 
 
@@ -315,3 +316,13 @@ endif
 if exists("&colorcolumn")
    set colorcolumn=79
 endif
+
+" change vim completion preview window height 
+" source: http://stackoverflow.com/questions/3712725/can-i-change-vim-completion-preview-window-height
+set previewheight=50
+au BufEnter ?* call PreviewHeightWorkAround()
+func PreviewHeightWorkAround()
+   if &previewwindow
+      exec 'setlocal winheight='.&previewheight
+   endif
+endfunc
