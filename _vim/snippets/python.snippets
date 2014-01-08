@@ -12,7 +12,7 @@ snippet mdoc
 			The target potential to be maximised. After the maximisation, the
 			origin pot is not changed, instead we get a newpot.
 
-		varargin : sequence[n_variables, ] or np.ndarray[n_variables, ] :
+		varargin : array-like, shape = [n_variables, ] :
 			Several variables to maximise the potential over.
 
 		maxover : int, optional, default: 1 :
@@ -23,7 +23,7 @@ snippet mdoc
 		newpot : Potential :
 			A new pot that maximised the origin potential.
 
-		maxstate : nd.array[n_variables, ] :
+		maxstate : np.ndarray, shape = [n_variables, ] :
 			When the variables in varargin equal to the states in maxstate,
 			we get the maximised potential.
 
